@@ -121,7 +121,7 @@ const Home = () => {
           <div className="row d-flex justify-content-center align-items-center">
             {/* Card 1 */}
             <div className="col-12 col-md-4 d-flex justify-content-center">
-              <Link to="https://ran.edu.np/">
+              <Link to="https://ocr.goodwish.com.np/">
                 <img
                   src={card}
                   alt="Card 1"
@@ -136,7 +136,7 @@ const Home = () => {
 
             {/* Card 2 */}
             <div className="col-12 col-md-4 d-flex justify-content-center">
-              <Link to="">
+              <Link to="https://hansadhwani.sanskritigram.org/">
                 <img
                   src={car}
                   alt="Card 2"
