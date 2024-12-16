@@ -6,6 +6,7 @@
   width: 100%;
   transition: background 0.3s ease-in-out;
   box-sizing: border-box;
+  height: 100px;
 }
 
 .header-content {
@@ -39,9 +40,4 @@
   transition: color 0.3s ease;
 }
 
-.blur-text:hover,
-.blur-text.active {
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: bold;
-  font-size: 1rem;
-}
+

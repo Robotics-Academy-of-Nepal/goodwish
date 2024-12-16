@@ -1,54 +1,47 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';  
-import imgs from '../assets/Group.png';
-import dance from '../assets/DanceBot-3-Med.gif';
+import bar from '../assets/Group.png';
+import robot from '../assets/DanceBot-3-Med.gif';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
-   const navigate = useNavigate();
-  
-    const handleLearnMoreHome = () => {
-      navigate('/home');
-    };
-
   return (
-    <div className="group" style={{ overflow: 'hidden', position: 'relative' }}>
-      <img src={imgs} alt="Groups" />
-
-      <div className="text">
-        <strong>
-          <h1>
-            THIS PAGE IS <br />
-            UNDER CONSTRUCTION
-          </h1>
-        </strong>
-        <h3>Please come back later!</h3>
-        
-        <img 
-          src={dance} 
-          alt="Dance" 
-          style={{ float: 'right', marginLeft: '20px' }} 
+    <div className="bg-white px-4">
+      {/* Full Width First Image */}
+      <div className="w-100">
+        <img
+          src={bar}
+          alt="Under Construction"
+          className="w-100"
         />
       </div>
 
-      <Link to ="/">
-      <button
-        className="btn btn-dark mt-3"
-        onClick={handleLearnMoreHome}
-        style={{
-          position: 'absolute',
-          left: '0',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          border: 'none',
-          display: 'block'
-        }}
-      >
-        Learn More
-      </button>
-      </Link>
+      {/* Text and Robot Image in Same Row */}
+      <div className="container-fluid py-5">
+        <div className="row align-items-center">
+          {/* Text Section */}
+          <div className="col-12 col-md-6 text-center text-md-start">
+            <h1 className="display-4 font-weight-bold text-black">
+              THIS PAGE IS UNDER CONSTRUCTION
+            </h1>
+            <p className="lead text-gray-700">
+              Please come back later!
+            </p>
+            <Link to="/">
+              <button className="mt-4 px-4 py-2 btn btn-dark">
+                Return to Home
+              </button>
+            </Link>
+          </div>
 
-      <div className="end">
-        <img src={imgs} alt="ended" />
+          {/* Robot Image Section */}
+          <div className="col-12 col-md-6 d-flex justify-content-center">
+            <img
+              src={robot}
+              alt="Under Construction Robot"
+              className="w-50 w-md-50"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
