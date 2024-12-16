@@ -1,0 +1,99 @@
+/* Container for "imageContainer" */
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; /* Space between the image and text */
+  flex: 1;
+}
+
+/* Styling for the circular image */
+.circleImage {
+  width: 300px; /* Adjust size as needed */
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular shape */
+  box-shadow: 0 4px 8px rgba(216, 205, 205, 0.1);
+  border: 1.5px solid #ddd; /* Optional border for better visibility */
+}
+
+/* Text container in the center */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  flex: 2; /* Makes it take up more space */
+}
+
+/* Container for the "OUR TEAM" section */
+.teamSection {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Adjust the container to fit the width of the screen */
+  text-align: center;
+  background-color: black; /* Set background color to black for dark mode */
+  padding: 20px 0; /* Add some padding for spacing */
+  gap: 15px; /* Set gap between images */
+}
+
+/* Styling for the images */
+.bgImage {
+  width: 80px; /* Set width for each image */
+  height: 80px; /* Fixed height to make square images */
+  object-fit: cover; /* Ensures the images cover the space without stretching */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Dark mode text color */
+.dark-mode .bgImage {
+  filter: brightness(0.6); /* Darken images in dark mode */
+}
+
+.dark-mode .textContainer {
+  color: white; /* Set text color to white in dark mode */
+}
+
+.dark-mode .teamSection {
+  background-color: #121212; /* Dark background for the team section */
+}
+
+/* Light mode text color */
+.light-mode .textContainer {
+  color: black; /* Set text color to black in light mode */
+}
+
+.light-mode .teamSection {
+  background-color: white; /* Light background for the team section */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust layout for smaller screens */
+  .imageContainer {
+    flex-direction: column; /* Stack image and text vertically */
+    margin-right: 0; /* Remove margin between image and text */
+    margin-bottom: 20px; /* Add margin at the bottom */
+  }
+
+  .circleImage {
+    width: 200px; /* Adjust image size for smaller screens */
+    height: 200px;
+  }
+
+  .textContainer {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .teamSection {
+    margin-top: 20px; /* Add spacing between sections */
+  }
+
+  .bgImage {
+    width: 60px; /* Adjust image size for smaller screens */
+    height: 60px;
+  }
+}

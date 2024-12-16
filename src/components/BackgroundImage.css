@@ -1,0 +1,13 @@
+/* Default background image */
+.background-image {
+  background-image: url('../assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  transition: background-size 0.3s ease;
+}
+
+/* Shrinking effect */
+.background-image.shrinking {
+  background-size: 80%; /* Adjust size as needed */
+}
