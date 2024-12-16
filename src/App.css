@@ -1,0 +1,25 @@
+/* Global styles for light and dark mode */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Optional: Add transitions for other components as well */
+.content {
+  padding: 20px;
+}
+
+header, footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
